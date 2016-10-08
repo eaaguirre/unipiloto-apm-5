@@ -1,0 +1,49 @@
+body {
+	width: 100%;
+	height:100%;
+    /*background-color: #E2F47C;*/
+    margin:0;
+}
+#global {
+ width:100%; height:800px;
+ margin: 0 auto 0 auto;
+ background-color: #ffbbbb;
+}
+#cabecera {
+ width: 100%;
+    /* height: 60px; */
+    /* margin: 0 auto 0 auto; */
+    background-color: #B40068;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#navegacion {
+ width: 50%;
+    /*margin: 0 auto 0 auto;*/
+    background-color: #B4CD00;
+    text-align: center;
+    float: left;
+    height: 200px;
+}
+#principal {
+ width: 50%;
+    margin: 0 auto 0 auto;
+    background-color: #ffCD68;
+    float: left;
+    height: 200px;
+
+}
+.prueba {
+ width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: #B4ff68;
+    float: right;
+}
+#pie {
+ width: 100%;
+    margin: 0 auto 0 auto;
+    background-color: #B4C355;
+    float: left;
+    text-align: center;
+}
