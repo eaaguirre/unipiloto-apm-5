@@ -1,0 +1,19 @@
+{
+  "name": "lab8",
+  "version": "1.0.0",
+  "description": "clases typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eaguirre1985/unipiloto-apm-5.git"
+  },
+  "author": "Edinson Aguirre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eaguirre1985/unipiloto-apm-5/issues"
+  },
+  "homepage": "https://github.com/eaguirre1985/unipiloto-apm-5#readme"
+}
