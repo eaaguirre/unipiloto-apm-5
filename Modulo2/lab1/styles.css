@@ -5,26 +5,38 @@ body {
     margin:0;
 }
 #global {
- width:100%; height:800px;
- margin: 0 auto 0 auto;
- background-color: #ffbbbb;
+ position:absolute;
+ left: 200px;
+ right: 0px;
+ top:0px;
+ bottom:41px;
+ background-color: red;
+ 
 }
 #cabecera {
- width: 100%;
-    /* height: 60px; */
-    /* margin: 0 auto 0 auto; */
+  position: absolute;
+  
+    top:0px;
+    left: 0px;
+    right:0px;
+    height: 30px;
     background-color: #B40068;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    
 }
 #navegacion {
- width: 50%;
+ position: absolute;
+ left: 0px;
+ width: 200px;
+ top:31px;
+ bottom: 40px;
+
+
     /*margin: 0 auto 0 auto;*/
-    background-color: #B4CD00;
+    background-color: blue;
     text-align: center;
-    float: left;
-    height: 200px;
+    /*float: left;
+    height: 200px;*/
 }
 #principal {
  width: 50%;
@@ -44,6 +56,62 @@ body {
  width: 100%;
     margin: 0 auto 0 auto;
     background-color: #B4C355;
-    float: left;
     text-align: center;
+    position: absolute;
+    height: 40px;
+    bottom: 0px;
+     left:0px;
+     right:0px;
 }
+/*
+@media screen and (max-width: 480px){
+      body {color:red;}
+
+          #cabecera {
+ 
+     height: 60px; 
+     margin: 0 auto 0 auto; 
+    background-color: orange;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+    }
+
+  @media screen and (min-width: 481px) and (max-width: 765px) {
+    
+    body {color:green;}
+    #navegacion{width: 50%;
+    /*margin: 0 auto 0 auto;
+    background-color: blue;
+    text-align: center;
+    float: left;
+    height: 200px;}
+    
+ 
+}
+
+@media screen and (min-width: 766px) and (max-width: 995px) {
+    body {color:blue;}
+          .prueba {
+   width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: orange;
+    float: right;
+                    }
+ 
+}
+
+@media screen and (min-width: 992px)  {
+    body{color:orange;}
+    #pie{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    background-color:red;
+    text-align: center;}
+
+
+ 
+}
+*/
