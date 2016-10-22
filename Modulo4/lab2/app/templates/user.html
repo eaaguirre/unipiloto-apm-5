@@ -1,0 +1,15 @@
+<h1>{{user.name}}</h1><br />
+<h2>{{user.id}}</h2><br />
+<h2>{{user.phone}}</h2><br />
+
+
+<div>
+	<hr />
+	<label for="">Name: </label>
+	<input type="text" [(ngModel)]="user.name" placeholder="Name">
+	<label>ID: </label><br />
+    <textarea [(ngModel)]="user.id" placeholder="id"></textarea><br />
+    <label>Phone </label><br />
+    <input [(ngModel)]="user.phone" placeholder="phone"><br />
+    
+</div>
