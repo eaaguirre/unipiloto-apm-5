@@ -1,21 +1,22 @@
 <h1>{{title}}</h1>
 <ul>
-    <li *ngFor="let Option of OPTIONS" 
-    	(click)="onSelect(Option)"
-    >
+    <li>
         <div>
 	<hr />
-	<label for="">Name: </label>
-	<input type="text" [(ngModel)]="product.name" placeholder="Name">
-	<label>Description: </label><br />
-    <textarea [(ngModel)]="product.description" placeholder="description"></textarea><br />
-    <label>Type: </label><br />
-    <input [(ngModel)]="product.type" placeholder="tipo"><br />
-    <label>Price: </label><br />
-    <input [(ngModel)]="product.price" placeholder="precio"><br />
-    <label>Quantity: </label><br />
-    <input [(ngModel)]="product.quantity" placeholder="cantidad"><br />
-</div> -->
+    <label>Units: </label><br />
+    <input [(ngModel)]="ride.units" placeholder="units">
+	<label for="">Airport </label>
+	<input type="checkbox" [(ngModel)]="ride.airport" placeholder="airport">
+    
+	<label>app: </label>
+    <input type="checkbox" [(ngModel)]="ride.app" placeholder="app">
+    <label>Festives: </label>
+    <input  type="checkbox" [(ngModel)]="ride.festives" placeholder="festives"><br/>
+    <label>total: </label>
+    <h1>{{ 
+             Total + ride.default + ride.airport + ride.app + ride.festives}}</h1>
+    
+</div> 
     </li>
 </ul>
 

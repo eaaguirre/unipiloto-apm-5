@@ -9,32 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Ride = (function () {
-    function Ride() {
+var UserDetailComponent = (function () {
+    function UserDetailComponent() {
     }
-    return Ride;
-}());
-exports.Ride = Ride;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Tarifas Para El Taxi";
-        this.Total = 0;
-        this.ride = {
-            airport: 3900,
-            app: 700,
-            units: 50,
-            festives: 1900,
-            default: 4100
-        };
-    }
-    AppComponent = __decorate([
+    UserDetailComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/Calculadora.html'
+            selector: 'user-detail',
+            templateUrl: 'app/templates/user-detail.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], UserDetailComponent);
+    return UserDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.UserDetailComponent = UserDetailComponent;
+//# sourceMappingURL=user-detail.component.js.map

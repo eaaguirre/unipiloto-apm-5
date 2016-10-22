@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-
-
-export class User{
-	name:string;
-	id:number;
-	phone:number;
-}
-
+import { User } from '../model/user';
 
 @Component({
   selector: 'my-app',

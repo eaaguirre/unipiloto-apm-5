@@ -8,33 +8,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var Ride = (function () {
-    function Ride() {
+var core_1 = require("@angular/core");
+var product_mock_1 = require("../mock/product-mock");
+var ProductService = (function () {
+    function ProductService() {
     }
-    return Ride;
-}());
-exports.Ride = Ride;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Tarifas Para El Taxi";
-        this.Total = 0;
-        this.ride = {
-            airport: 3900,
-            app: 700,
-            units: 50,
-            festives: 1900,
-            default: 4100
-        };
-    }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/Calculadora.html'
-        }), 
+    ProductService.prototype.getProducts = function () {
+        return Promise.resolve(product_mock_1.PRODUCTS);
+    };
+    ProductService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], ProductService);
+    return ProductService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.ProductService = ProductService;
+//# sourceMappingURL=product.service.js.map

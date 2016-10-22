@@ -9,32 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Ride = (function () {
-    function Ride() {
+var teacher_1 = require('../model/teacher');
+var TeacherDetailComponent = (function () {
+    function TeacherDetailComponent() {
     }
-    return Ride;
-}());
-exports.Ride = Ride;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Tarifas Para El Taxi";
-        this.Total = 0;
-        this.ride = {
-            airport: 3900,
-            app: 700,
-            units: 50,
-            festives: 1900,
-            default: 4100
-        };
-    }
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', teacher_1.Teacher)
+    ], TeacherDetailComponent.prototype, "teacher", void 0);
+    TeacherDetailComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/Calculadora.html'
+            selector: 'teacher-detail',
+            templateUrl: 'app/templates/teacher-detail.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TeacherDetailComponent);
+    return TeacherDetailComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TeacherDetailComponent = TeacherDetailComponent;
+//# sourceMappingURL=teacher-detail.component.js.map

@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
 
  export class Ride {
- 	aiport: number=3900;
- 	app: number=700;
- 	units: number=50;
- 	festives: number=1900;
-    default:number= 4100;
+ 	airport: number;
+ 	app: number;
+ 	units: number;
+ 	festives: number;
+    default:number;
+
  }
 
- export class Option {
- 	airport: string;
- 	app: string;
- 	units: string;
- 	festives: string;
-	total:string;
- }
+ 
 
 @Component({
   selector: 'my-app',
@@ -23,11 +18,19 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 	title: string = "Tarifas Para El Taxi";
-	selected: Option;
-	options:Option[]= OPTIONS;
-	onSelect(option: Option) {
-		this.selected = option;
+
+     Total: number=0;
+	ride:Ride={
+		airport:3900,
+		app:700,
+		units:50,
+		festives:1900,
+		default:4100
+
+	};
    
+	
+
 	
 }
 

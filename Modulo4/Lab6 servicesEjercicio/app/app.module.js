@@ -9,32 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Ride = (function () {
-    function Ride() {
+var platform_browser_1 = require('@angular/platform-browser');
+var app_component_1 = require('./components/app.component');
+var forms_1 = require('@angular/forms');
+var AppModule = (function () {
+    function AppModule() {
     }
-    return Ride;
-}());
-exports.Ride = Ride;
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "Tarifas Para El Taxi";
-        this.Total = 0;
-        this.ride = {
-            airport: 3900,
-            app: 700,
-            units: 50,
-            festives: 1900,
-            default: 4100
-        };
-    }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/templates/Calculadora.html'
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule,
+                forms_1.FormsModule
+            ],
+            declarations: [app_component_1.AppComponent],
+            bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AppModule);
+    return AppModule;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

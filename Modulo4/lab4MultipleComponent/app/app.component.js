@@ -9,28 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Ride = (function () {
-    function Ride() {
+var User = (function () {
+    function User() {
     }
-    return Ride;
+    return User;
 }());
-exports.Ride = Ride;
+exports.User = User;
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = "Tarifas Para El Taxi";
-        this.Total = 0;
-        this.ride = {
-            airport: 3900,
-            app: 700,
-            units: 50,
-            festives: 1900,
-            default: 4100
+        this.user = {
+            name: "Edinson",
+            id: 1,
+            phone: 3025480
         };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            templateUrl: 'app/templates/Calculadora.html'
+            templateUrl: 'app/templates/user.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

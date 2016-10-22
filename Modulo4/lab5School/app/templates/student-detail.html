@@ -1,0 +1,12 @@
+
+<div *ngIf="student">
+	<hr />
+	<label for="">ID: </label>
+	<input type="text" [(ngModel)]="student.id" placeholder="ID">
+	<label>NAME: </label><br />
+    <textarea [(ngModel)]="student.name" placeholder="NAME"></textarea><br />
+    <label>ClASS</label><br />
+    <label>GRADE: </label><br />
+    <input [(ngModel)]="student.grade" placeholder="GRADE"><br />
+    
+</div>
