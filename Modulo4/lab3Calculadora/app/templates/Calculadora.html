@@ -4,17 +4,17 @@
         <div>
 	<hr />
     <label>Units: </label><br />
-    <input [(ngModel)]="ride.units" placeholder="units">
+    <input [(ngModel)]="units" placeholder="units" >
 	<label for="">Airport </label>
-	<input type="checkbox" [(ngModel)]="ride.airport" placeholder="airport">
+	<input type="checkbox"  id="airport" [(ngModel)]="airport" placeholder="airport"  (change)="onChange($event)  ">
     
 	<label>app: </label>
-    <input type="checkbox" [(ngModel)]="ride.app" placeholder="app">
+    <input type="checkbox" [(ngModel)]="app" placeholder="app" (change)="onChange($event)">
     <label>Festives: </label>
-    <input  type="checkbox" [(ngModel)]="ride.festives" placeholder="festives"><br/>
+    <input  type="checkbox" [(ngModel)]="festives" placeholder="festives" (change)="onChange($event)"><br/>
     <label>total: </label>
     <h1>{{ 
-             Total + ride.default + ride.airport + ride.app + ride.festives}}</h1>
+             Total }}</h1>
     
 </div> 
     </li>

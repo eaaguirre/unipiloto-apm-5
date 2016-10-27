@@ -18,6 +18,10 @@ exports.Ride = Ride;
 var AppComponent = (function () {
     function AppComponent() {
         this.title = "Tarifas Para El Taxi";
+        this.units = 0;
+        this.airport = false;
+        this.app = false;
+        this.festives = false;
         this.Total = 0;
         this.ride = {
             airport: 3900,
@@ -27,6 +31,18 @@ var AppComponent = (function () {
             default: 4100
         };
     }
+    AppComponent.prototype.onChange = function (event) {
+        /*var isChecked = event.currentTarget.checked;*/
+        var flag = true;
+    };
+    AppComponent.prototype.calculateprice = function (flag) {
+        if (flag === true) {
+            this.Total += this.ride.airport + this.ride.app + this.ride.festives;
+        }
+        else {
+            this.Total -= this.ride.airport - this.ride.app - this.ride.festives;
+        }
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
