@@ -3,7 +3,7 @@ import { USERS }  from '../mock/user-mock';
 import  {User}   from  '../model/user';
 
 @Component({
-    selector: 'user',
+    selector: 'user-list',
     templateUrl: 'app/templates/user-list.html'
 })
 

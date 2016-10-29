@@ -17,7 +17,7 @@ var UserComponent = (function () {
     }
     UserComponent = __decorate([
         core_1.Component({
-            selector: 'user',
+            selector: 'user-list',
             templateUrl: 'app/templates/user-list.html'
         }), 
         __metadata('design:paramtypes', [])

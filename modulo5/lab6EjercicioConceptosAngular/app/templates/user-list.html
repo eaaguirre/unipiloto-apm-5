@@ -1,0 +1,17 @@
+
+<h1>{{ title }}</h1>
+<ul>
+    <li *ngFor="let user of users"
+        [class.pepito]="user === selected"
+        (click)="onSelect(user)">
+        <span>{{user.id}}</span> {{user.name}}
+    </li>
+</ul>
+
+<div *ngIf="selected">
+    <h2>
+        {{selected.name| uppercase}} 
+    </h2>
+    <button (click)="gotoDetail()">Details</button>
+</div>
+

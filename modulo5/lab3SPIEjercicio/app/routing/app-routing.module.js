@@ -14,8 +14,8 @@ var user_list_component_1 = require("../components/user-list.component");
 var product_list_component_1 = require("../components/product-list.component");
 var routes = [
     { path: '', redirectTo: '/', pathMatch: 'full' },
-    { path: 'users-list', component: user_list_component_1.UserComponent },
-    { path: 'products-list', component: product_list_component_1.ProductComponent }
+    { path: 'user-list', component: user_list_component_1.UserComponent },
+    { path: 'products', component: product_list_component_1.ProductComponent }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
