@@ -13,10 +13,9 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./components/app.component');
 var app_routing_module_1 = require("./routing/app-routing.module");
-var product_list_component_1 = require("./components/product-list.component");
-var user_list_component_1 = require("./components/user-list.component");
-var product_detail_component_1 = require("./components/product-detail.component");
-var user_detail_component_1 = require("./components/user-detail.component");
+var salesinvoice_component_1 = require("./components/salesinvoice.component");
+var customer_component_1 = require("./components/customer.component");
+var lineitem_component_1 = require("./components/lineitem.component");
 var common_1 = require("@angular/common");
 var AppModule = (function () {
     function AppModule() {
@@ -30,10 +29,9 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                product_list_component_1.ProductComponent,
-                user_list_component_1.UserComponent,
-                product_detail_component_1.ProductDetailComponent,
-                user_detail_component_1.UserDetailComponent
+                salesinvoice_component_1.SalesInvoiceComponent,
+                customer_component_1.CustomaerDetailComponent,
+                lineitem_component_1.LineItemDetailComponent
             ],
             providers: [
                 {
