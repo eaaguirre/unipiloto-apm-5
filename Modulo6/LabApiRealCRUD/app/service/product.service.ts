@@ -1,19 +1,19 @@
 import {Injectable} from "@angular/core";
 import {Product} from "../model/product";
-import {Http, Headers} from "@angular/http";
+import {Http,Headers} from "@angular/http";
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Rx';
 
 @Injectable()
 export class ProductService {
 
-    private productsURI = 'http://138.68.0.83:7070/v1/api/products/list';
+    private productsURI = 'http://138.68.0.83:7070/api/v1/product/';
     private headers = new Headers({'Content-Type': 'application/json'});
 
     constructor(private http: Http) { }
 
     getProducts(): Observable<Product[]> {
-        return this.http.get(this.productsURI)
+        return this.http.get(this.productsURI +('list'))
             .map(response => response.json() as Product[])
             .catch(this.handleError);
     }
@@ -26,11 +26,13 @@ export class ProductService {
             .catch(this.handleError);
     }
 
-    create(name: string): Observable<Product> {
-
+    create(product: Product): Observable<Product> {
+     var param= JSON.stringify(product);
         return this.http
-            .post(this.productsURI, JSON.stringify({name: name}), {headers: this.headers})
-            .map(res => res.json())
+            .post(this.productsURI +'create', param, {headers: this.headers})
+            .map(
+                res => res.json()
+                )
             .catch(this.handleError);
     }
 
@@ -38,4 +40,6 @@ export class ProductService {
         console.error('An error occurred', error); // for demo purposes only
         return Observable.throw(error.message || error);
     }
+    
+    
 }

@@ -1,8 +1,12 @@
 <h1>{{ title }}</h1>
 
 <div>
-    <label>Product name:</label> <input #productName />
-    <button (click)="add(productName.value); productName.value=''">
+     <input [(ngModel)]="product.name" placeholder="name"><br />
+    <input [(ngModel)]="product.type" placeholder="type"><br />
+    <input [(ngModel)]="product.quantity" placeholder="quantity"><br />
+    <input [(ngModel)]="product.price" placeholder="price"><br />
+    
+    <button (click)="add(product); product.value=''">
         Add
     </button>
 </div>
@@ -17,4 +21,4 @@
     </li>
 </ul>
 
-<product-detail [product]="selected"></product-detail>
+<product-detail [product]="selectedproduct"></product-detail>

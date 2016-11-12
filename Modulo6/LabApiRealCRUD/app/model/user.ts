@@ -1,5 +1,13 @@
 export class User{
-	name:string;
-	id:number;
-	phone:number;
+
+
+	
+
+	id: number;
+    email: string;
+    password: string;
+    firstname: string;
+    lastname: string;
+    phone:number;
+    url: string;
 }

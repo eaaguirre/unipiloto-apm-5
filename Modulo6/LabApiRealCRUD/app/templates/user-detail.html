@@ -9,11 +9,19 @@
 
 <div *ngIf="user">
     <hr />
-    <label>Name: </label><br />
-    <input [(ngModel)]="user.name" placeholder="name"><br />
-    <label>Description: </label><br />
-    <textarea [(ngModel)]="user.id" placeholder="description"></textarea><br />
-    <label>Type: </label><br />
-    <input [(ngModel)]="user.phone" placeholder="tipo"><br /
-    <button (click)="save()">Save</button>
+    <label>Id: </label><br />
+    <input [(ngModel)]="user.id" placeholder="id"><br />
+    <label>email: </label><br />
+    <textarea [(ngModel)]="user.email" placeholder="email"></textarea><br />
+    <label>password: </label><br />
+    <textarea [(ngModel)]="user.password" placeholder="password"></textarea><br />
+    <label>fisrtname: </label><br />
+    <input [(ngModel)]="user.firstname" placeholder="firstname"><br />
+     <label>flastname: </label><br />
+    <input [(ngModel)]="user.lastname" placeholder="lastname"><br />
+     <label>phone: </label><br />
+    <input [(ngModel)]="user.phone" placeholder="phone"><br />
+       <label>url: </label><br />
+    <input [(ngModel)]="user.url" placeholder="url"><br />
+        <button (click)="save()">Save</button>
 </div>

@@ -13,7 +13,7 @@
     <li *ngFor="let user of users"
         [class.pepito]="user === selected"
         (click)="onSelect(user)">
-        <span>{{user.id}}</span> {{user.name}}
+        <span>{{user.id}}</span> {{user.firstname}} {{user.lastname}}
     </li>
 </ul>
 

@@ -15,7 +15,7 @@ var Rx_1 = require('rxjs/Rx');
 var UserService = (function () {
     function UserService(http) {
         this.http = http;
-        this.usersURI = 'http://138.68.0.83:7070/api/v1/users/list';
+        this.usersURI = 'http://138.68.0.83:7070/api/v1/user/list';
         this.headers = new http_1.Headers({ 'Content-Type': 'application/json' });
     }
     UserService.prototype.getUsers = function () {

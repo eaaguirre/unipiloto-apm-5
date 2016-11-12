@@ -14,6 +14,14 @@ var ProductComponent = (function () {
     function ProductComponent(productService) {
         this.productService = productService;
         this.title = "PRODUCTS";
+        this.product = {
+            id: 0,
+            name: "",
+            type: "",
+            quantity: 0,
+            price: 0,
+            url: ""
+        };
     }
     ProductComponent.prototype.getProducts = function () {
         var _this = this;
@@ -30,13 +38,13 @@ var ProductComponent = (function () {
     ProductComponent.prototype.onSelect = function (product) {
         this.selectedproduct = product;
     };
-    ProductComponent.prototype.add = function (name) {
+    ProductComponent.prototype.add = function (product) {
         var _this = this;
-        name = name.trim();
-        if (!name) {
+        product = product;
+        if (!product.name) {
             return;
         }
-        this.productService.create(name)
+        this.productService.create(product)
             .subscribe(function (product) {
             _this.products.push(product);
             _this.selectedproduct = null;

@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_component_1 = require('./component/app.component');
-var app_routing_module_1 = require("./routing/app-routing.module");
+var app_rounting_module_1 = require("./routing/app-rounting.module");
 var product_list_component_1 = require("./component/product-list.component");
 var product_detail_component_1 = require('./component/product-detail.component');
 var user_list_component_1 = require("./component/user-list.component");
@@ -28,7 +28,7 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
-                app_routing_module_1.AppRoutingModule
+                app_rounting_module_1.AppRoutingModule
             ],
             declarations: [
                 app_component_1.AppComponent,

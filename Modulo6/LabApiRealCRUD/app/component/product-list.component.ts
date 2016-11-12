@@ -15,7 +15,19 @@ export class ProductComponent {
 
     constructor(private productService: ProductService) {
 
+        
     }
+    product:Product ={
+        id: 0,
+    name: "", 
+    type: "",
+    
+    quantity: 0,
+    price: 0,
+    url:""
+    }
+
+
 
     getProducts() {
         this.productService.getProducts()
@@ -38,10 +50,10 @@ export class ProductComponent {
         this.selectedproduct = product;
     }
 
-    add(name: string): void {
-        name = name.trim();
-        if (!name) { return; }
-        this.productService.create(name)
+    add(product: Product): void {
+        product = product;
+        if (!product.name) { return; }
+        this.productService.create(product)
             .subscribe(product => {
                 this.products.push(product);
                 this.selectedproduct = null;

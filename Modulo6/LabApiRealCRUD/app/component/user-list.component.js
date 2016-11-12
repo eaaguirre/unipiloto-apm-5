@@ -44,7 +44,7 @@ var UserComponent = (function () {
     };
     UserComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
+            selector: 'user-list',
             templateUrl: 'app/templates/user-list.html',
             providers: [user_service_1.UserService]
         }), 

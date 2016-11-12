@@ -7,7 +7,7 @@ import {Observable} from 'rxjs/Rx';
 @Injectable()
 export class UserService {
 
-    private usersURI = 'http://138.68.0.83:7070/api/v1/users/list';
+    private usersURI = 'http://138.68.0.83:7070/api/v1/user/list';
     private headers = new Headers({'Content-Type': 'application/json'});
 
     constructor(private http: Http) { }
