@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      PRODUCTOS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  ESTE ES EL PRODUCTO
+  
+   <div *ngIf="selected">
+	 <h1> Name:{{ product.name }}</h1>
+	  <h3>id: {{product.id}}</h3>
+	  <h3>type: {{product.type}}</h3>
+	  <h3>quantity: {{product.quantity}}</h3>
+	  <h3>price: {{product.price}}</h3>
+</div>
+
+
+  <p>
+    <button ion-button color="light">Light</button>
+  </p>
+
+  <p>
+    <button ion-button (click)="loadInfo()">PRODUCTO</button>
+  </p>
+
+  <p>
+    <button ion-button (click)='mostrar()'>PRODUCTOS</button>
+  </p>
+
+  <p>
+    <button ion-button color="danger" block round>Danger</button>
+  </p>
+
+  <p>
+    <button ion-button color="dark">Dark</button>
+  </p>
+</ion-content>
