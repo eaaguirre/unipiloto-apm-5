@@ -21,20 +21,26 @@ export class CoordenadasPage {
     console.log('Hello CoordenadasPage Page');
   }
 
-    latitude:number=0
+   public latitude:number=0
    longitude:number=0
 
   showlocation() {
-
-    Geolocation.getCurrentPosition().then(resp => {
-      let latitude = resp.coords.latitude;
-      let longitude = resp.coords.longitude;
-      console.log('latitude'+latitude,'logitude'+ longitude);
-      Dialogs.alert('La latitud es:'+ this.latitude +' y la longitud es: '+ this.longitude +'', 'Alert!', 'Mostrando...');
+     Dialogs.alert('La latitud es:'+ this.latitude +' y la longitud es: '+ this.longitude +'', 'Alert!', 'Mostrando...')
+     Geolocation.getCurrentPosition().then(resp => {
+       this.latitude = resp.coords.latitude;
+      this.longitude = resp.coords.longitude;
+    Dialogs.alert('La latitud es:'+ this.latitude +' y la longitud es: '+ this.longitude +'', 'Alert!', 'Mostrando...')
     }).catch((error) => {
       console.log('Error getting location', error);
     });
+
   }
+
+ 
+
+
+  
+  
 
 
 
